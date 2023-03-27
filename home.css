@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Solway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+body {
+    margin: 0;
+}
+
+#first {
+    background-image: url("./homebg.png");
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+p#tagline {
+    color: white;
+    text-align: center;
+    padding: 2.5em;
+    font-size: 25px;
+    font-family: 'Solway', serif;
+    letter-spacing: 3px;
+    backdrop-filter:calc
+}
+
+p#name {
+    color: white;
+    text-align: center;
+    padding: 1em;
+    font-size: 80px;
+    font-family: 'Hammersmith One', sans-serif;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 2px #000, -3px -3px 2px #000;
+}
+
+#dwu{
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+
+#dinWidUs{
+    background-color: white;
+    color: black;
+    padding: 1em;
+    font-family: 'Solway', serif;
+    box-shadow: 2px 2px 2px black;
+    transition: background-color 0.5s ease-out 10ms;
+    text-decoration: none;
+    
+}
+
+#dinWidUs:hover {
+    background-color: black;
+    color: white;
+    padding: 1em;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    font-family: 'Solway', serif;
+    text-decoration: none;
+}
