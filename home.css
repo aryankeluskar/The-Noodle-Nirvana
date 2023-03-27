@@ -1,5 +1,64 @@
+/* using google cdn to import fonts as per my design on canva */
 @import url('https://fonts.googleapis.com/css2?family=Solway:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+/* animations */
+/* 1. for the title shadow rotation effect */
+/* animation to remind the visitor of the stirring of noodles while cooking them */
+@keyframes titleWebsite {
+    0% {
+        text-shadow: 3px 3px 2px #000, -3px -3px 2px #000;
+    }
+
+    25% {
+        text-shadow: -3px 3px 2px #000, 3px -3px 2px #000;
+    }
+
+    50% {
+        text-shadow: -3px -3px 2px #000, 3px 3px 2px #000;
+    }
+
+    75% {
+        text-shadow: 3px -3px 2px #000, -3px 3px 2px #000;
+    }
+
+    100% {
+        text-shadow: 3px 3px 2px #000, -3px -3px 2px #000;
+    }
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #000000;
+    position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+    display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+    float: left;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 2.5vh;
+    font-family: 'Solway', serif;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+    background: black;
+    float: right;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+    background-color: #000000;
+    color: white;
+}
 
 body {
     margin: 0;
@@ -10,10 +69,10 @@ body {
     margin: 0;
     padding: 0;
     width: 100vw;
-    height: 100vh;
+    height: 94vh;
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
 
 p#tagline {
@@ -21,9 +80,10 @@ p#tagline {
     text-align: center;
     padding: 2.5em;
     font-size: 25px;
+    margin-top: 0;
     font-family: 'Solway', serif;
     letter-spacing: 3px;
-    backdrop-filter:calc
+    backdrop-filter: calc
 }
 
 p#name {
@@ -34,15 +94,19 @@ p#name {
     font-family: 'Hammersmith One', sans-serif;
     letter-spacing: 3px;
     text-shadow: 3px 3px 2px #000, -3px -3px 2px #000;
+    animation-name: titleWebsite;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
-#dwu{
+#dwu {
     width: fit-content;
     height: fit-content;
     margin: auto;
 }
 
-#dinWidUs{
+#dinWidUs {
     background-color: white;
     color: black;
     padding: 1em;
@@ -50,7 +114,6 @@ p#name {
     box-shadow: 2px 2px 2px black;
     transition: background-color 0.5s ease-out 10ms;
     text-decoration: none;
-    
 }
 
 #dinWidUs:hover {
