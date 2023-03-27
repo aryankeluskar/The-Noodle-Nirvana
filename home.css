@@ -1,6 +1,10 @@
 /* using google cdn to import fonts as per my design on canva */
 @import url('https://fonts.googleapis.com/css2?family=Solway:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+
+/* FUTURE ARYAN: PLS CHANGE ALL PX TO EM */
+
 
 /* animations */
 /* 1. for the title shadow rotation effect */
@@ -33,12 +37,10 @@
     position: relative;
 }
 
-/* Hide the links inside the navigation menu (except for logo/home) */
 .topnav #myLinks {
     display: none;
 }
 
-/* Style navigation menu links */
 .topnav a {
     float: left;
     color: white;
@@ -48,16 +50,18 @@
     font-family: 'Solway', serif;
 }
 
-/* Style the hamburger menu */
 .topnav a.icon {
     background: black;
     float: right;
 }
 
-/* Style the active link (or home/logo) */
 .active {
     background-color: #000000;
     color: white;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -68,7 +72,6 @@ body {
     background-image: url("./homebg.png");
     margin: 0;
     padding: 0;
-    width: 100vw;
     height: 94vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -125,4 +128,142 @@ p#name {
     margin: auto;
     font-family: 'Solway', serif;
     text-decoration: none;
+}
+
+
+
+
+div#second {
+    background-color: #000;
+    color: whitesmoke;
+}
+
+table#tableTop {
+    height: 45vh;
+}
+
+td.secondTd {
+    width: 50%;
+}
+
+p#secondHeading {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 4px;
+}
+
+p#secondDescr {
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: 'Solway', serif;
+}
+
+div#secondLower {
+    height: 55vh;
+    background-repeat: no-repeat;
+    background-image: url("./subbg.png");
+    background-size: cover;
+}
+
+
+
+
+
+div#third {
+    background-color: #e1e1d9;
+}
+
+p#thirdHeading {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 20vh;
+}
+
+p#thirdDescr {
+    font-size: 1.3em;
+    font-family: 'Solway', serif;
+    padding-bottom: 20vh;
+}
+
+td#leftThirdTd {
+    width: 55%;
+    padding-left: 5vw;
+}
+
+td#rightThirdTd {
+    width: 45%;
+    padding-right: 10%;
+}
+
+img#p31 {
+    position: relative;
+    top: -3vh;
+    padding-right: 2vw;
+}
+
+img#p32 {
+    position: relative;
+    top: 5vh;
+    padding-right: 2vw;
+}
+
+
+
+div#fourthcontainer{
+    width: fit-content;
+    display: block;
+    margin: auto;
+}
+
+div#fourth{
+    background-color: #f5f5ef;
+    height: 80vh;
+    width: fit-content;
+    padding-left: 9vw;
+    padding-right: 9vw;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+td.fourthTd{
+    width: 20vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p#p41head{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 15vh;
+}
+
+p#p41body{
+    font-size: 1.3em;
+    font-family: 'Solway', serif;
+    padding-bottom: 20vh;
+    padding-right: 5vw;
+}
+
+p#p42, p#p43, p#p44{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0vh;
+}
+
+img.img4{
+    padding-top: 15vh; 
 }
