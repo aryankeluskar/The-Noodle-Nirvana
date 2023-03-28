@@ -52,7 +52,8 @@ table {
     color: black;
 }
 
-td.items {
+td.itemName,
+td.itemPrice {
     width: 25vw;
     border: 2px solid black;
     padding: 1em;
@@ -76,7 +77,7 @@ div#heading {
     text-align: center;
 }
 
-td.itemType{
+td.itemType {
     width: 30vw;
     margin-left: 10vw;
 }
@@ -86,26 +87,57 @@ hr {
     width: 90vw;
     border: none;
     border-top: 1px solid rgba(0, 0, 0, 0.3);
-    border-bottom: 1px solid rgba(0,0,0,.08);
+    border-bottom: 1px solid rgba(0, 0, 0, .08);
     margin: 2.5em auto;
     position: relative;
-  }
-  hr:before,hr:after {
-    content: '';    
+}
+
+hr:before,
+hr:after {
+    content: '';
     position: absolute;
-    bottom:0px;
+    bottom: 0px;
     height: 5em;
     width: 100%;
-    background: radial-gradient(ellipse at bottom, rgba(255,255,255,0.35) 0%,rgba(255,255,255,0) 70%);
-    z-index:0;
-  }
-  hr:after {
-    top:0px;
-    bottom:auto;
-    height: 1.5em;
-    background: radial-gradient(ellipse at top, rgba(0,0,0,0.06) 0%,rgba(0,0,0,0) 70%);
-  }
+    background: radial-gradient(ellipse at bottom, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 70%);
+    z-index: 0;
+}
 
-  div#foot{
+hr:after {
+    top: 0px;
+    bottom: auto;
+    height: 1.5em;
+    background: radial-gradient(ellipse at top, rgba(0, 0, 0, 0.06) 0%, rgba(0, 0, 0, 0) 70%);
+}
+
+div#foot {
     height: 5vh;
-  }
+}
+
+@media only screen and (max-width: 928px) {
+    .topnav #myLinks {
+        display: none;
+    }
+
+    td {
+        display: block;
+    }
+
+    td.itemName,
+    td.itemPrice {
+        display: table-cell;
+        text-align: center;
+    }
+
+    table.innerContainer {
+        font-size: 1.25em;
+        width: 80vw;
+        margin: auto;
+    }
+    table.outerContainer{
+        width: 100vw;
+    }
+    h2{
+        padding-left: 0 !important;
+    }
+}
