@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
 
 /* FUTURE ARYAN: PLS CHANGE ALL PX TO EM */
-
+/* FUTURE ARYAN, PLS COMPRESS ALL IMAGES */
 
 /* animations */
 /* 1. for the title shadow rotation effect */
@@ -69,7 +69,7 @@ body {
 }
 
 #first {
-    background-image: url("./homebg.png");
+    background-image: url("./homebg.webp");
     margin: 0;
     padding: 0;
     height: 94vh;
@@ -163,7 +163,7 @@ p#secondDescr {
 div#secondLower {
     height: 55vh;
     background-repeat: no-repeat;
-    background-image: url("./subbg.png");
+    background-image: url("./subbg.webp");
     background-size: cover;
 }
 
@@ -215,29 +215,31 @@ img#p32 {
 
 
 
-div#fourthcontainer{
-    width: fit-content;
+div#fourthcontainer {
+    max-width: 99vw;
     display: block;
     margin: auto;
+    background-color: #f5f5ef;
 }
 
-div#fourth{
+div#fourth {
     background-color: #f5f5ef;
-    height: 80vh;
-    width: fit-content;
+    min-height: 80vh;
+    max-height: fit-content;
     padding-left: 9vw;
-    padding-right: 9vw;
+    width: fit-content;
+    max-width: 82vw;
     display: inline-flex;
     flex-wrap: wrap;
 }
 
-td.fourthTd{
+td.fourthTd {
     width: 20vw;
     margin-left: auto;
     margin-right: auto;
 }
 
-p#p41head{
+p#p41head {
     font-family: 'Raleway', sans-serif;
     font-size: 2.5em;
     padding-bottom: 0;
@@ -247,14 +249,16 @@ p#p41head{
     padding-top: 15vh;
 }
 
-p#p41body{
+p#p41body {
     font-size: 1.3em;
     font-family: 'Solway', serif;
     padding-bottom: 20vh;
     padding-right: 5vw;
 }
 
-p#p42, p#p43, p#p44{
+p#p42,
+p#p43,
+p#p44 {
     font-family: 'Raleway', sans-serif;
     font-size: 1.5em;
     padding-bottom: 0;
@@ -262,8 +266,121 @@ p#p42, p#p43, p#p44{
     padding-left: 0;
     padding-right: 0;
     padding-top: 0vh;
+    color: #000;
+    text-decoration: none;
 }
 
-img.img4{
-    padding-top: 15vh; 
+img.img4 {
+    padding-top: 15vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+
+div#fifth {
+    color: #f5f5ef;
+    background: #000;
+    text-align: center;
+    height: 80vh;
+}
+
+p#p5head {
+    padding-top: 10vh;
+    font-size: 2.5em;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+div.reviewContainer {
+    max-width: 99vw;
+}
+
+td.review {
+    padding-top: 15vh;
+    color: #f5f5ef;
+    background: #000;
+    text-align: left;
+    width: 20vw;
+    margin-left: 5vw;
+    padding-left: 10vw;
+}
+
+p.reviewTitle,
+p.reviewBody,
+p.reviewWriter {
+    width: 20vw;
+}
+
+p.reviewTitle {
+    font-size: 1.3em;
+    font-family: 'Raleway', sans-serif;
+}
+
+p.reviewBody,
+p.reviewWriter {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    font-family: 'Solway', serif;
+}
+
+
+
+div#sixth {
+    background-color: #e1e1d9;
+    width: 99vw;
+    height: 80vh;
+}
+
+p#sixthHeading {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5em;
+    padding-bottom: 8vh;
+    margin-bottom: 0;
+    padding-top: 0vh;
+}
+
+td#leftSixthTd {
+    width: 50vw;
+    height: 80vh;
+    background-image: url("./contactus.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+td#rightSixthTd {
+    width: 50vw;
+    text-align: center;
+}
+
+div#contactInfo {
+    text-align: left;
+}
+
+p#phoneTitle,
+p#emailTitle,
+p#addTitle {
+    font-size: 1.3em;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 10vw;
+}
+
+p#phoneBody,
+p#emailBody,
+p#addBody {
+    padding-left: 10vw;
+    color: #000;
+    text-decoration: none;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    font-family: 'Solway', serif;
+}
+
+a#emailAdd {
+    color: #000;
+    text-decoration: none;
 }
