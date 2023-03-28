@@ -363,7 +363,8 @@ div#contactInfo {
 
 p#phoneTitle,
 p#emailTitle,
-p#addTitle {
+p#addTitle,
+p#socialTitle {
     font-size: 1.3em;
     font-family: 'Raleway', sans-serif;
     padding-left: 10vw;
@@ -371,7 +372,8 @@ p#addTitle {
 
 p#phoneBody,
 p#emailBody,
-p#addBody {
+p#addBody,
+p#socialBody {
     padding-left: 10vw;
     color: #000;
     text-decoration: none;
@@ -380,7 +382,7 @@ p#addBody {
     font-family: 'Solway', serif;
 }
 
-a#emailAdd {
+a {
     color: #000;
     text-decoration: none;
 }
