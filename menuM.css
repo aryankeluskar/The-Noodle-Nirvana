@@ -87,7 +87,7 @@ div#heading {
 td.itemType {
     width: 30vw;
     margin-left: 10vw;
-    display: inline;
+    display: block;
 }
 
 
