@@ -1,0 +1,84 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve a Table | The Noodle Nirvana</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./reserveTableMobile.css">
+</head>
+
+<body>
+    <div id="upperText">
+        <p id="boldUpperText">
+            Let us serve you a classy experience
+        </p>
+        <p id="normalUpperText">
+            Avoid queuing up for your meal by pre-booking a table with us.
+        </p>
+    </div>
+    <img src="./reservation.webp" id="photoReservation" alt="">
+    <div id="locationChooser">
+        <p id="locTitle">
+            Location
+        </p>
+        <select name="restaurant" id="restaurant">
+            <option selected disabled hidden>Choose a restaurant</option>
+            <option class="resOpt" value="Banjara Hills">Banjara Hills</option>
+            <option class="resOpt" value="Jubilee Hills">Jubilee Hills</option>
+            <option class="resOpt" value="HITEC City">HITEC City</option>
+            <option class="resOpt" value="Begumpet">Begumpet</option>
+            <option class="resOpt" value="Somajiguda">Somajiguda</option>
+            <option class="resOpt" value="Secunderabad">Secunderabad</option>
+        </select>
+    </div>
+    <div id="dateChooser">
+        <p id="dateTitle">
+            Date
+        </p>
+        <input type="date" name="" id="dateOpt">
+    </div>
+    <div id="timeChooser">
+        <p id="timeTitle">
+            Available Time Slots
+        </p>
+        <select name="timeChoice" id="timeChoice">
+            <option selected disabled hidden>Choose a slot</option>
+            <option class="timeOpt" value="9a">9:00AM</option>
+            <option class="timeOpt" value="10a">10:00AM</option>
+            <option class="timeOpt" value="11a">11:00AM</option>
+            <option class="timeOpt" value="12p">12:00PM</option>
+            <option class="timeOpt" value="1p">1:00PM</option>
+            <option class="timeOpt" value="2p">2:00PM</option>
+            <option class="timeOpt" value="3p">3:00PM</option>
+            <option class="timeOpt" value="4p">4:00PM</option>
+            <option class="timeOpt" value="5p">5:00PM</option>
+            <option class="timeOpt" value="6p">6:00PM</option>
+            <option class="timeOpt" value="7p">7:00PM</option>
+            <option class="timeOpt" value="8p">8:00PM</option>
+        </select>
+    </div>
+    <div id="finalButton">
+        <button onclick="sendData();">
+            <img id="table" src="./food-tray.svg" alt="">
+            <div id="spacing"></div>
+            <p id="buttonText">
+                Reserve <br> Table
+            </p>
+        </button>
+    </div>
+</body>
+
+<script>
+    function sendData() {
+        var resId = document.getElementById("restaurant").selectedIndex;
+        console.log("Restaurant Selected: " + document.getElementsByClassName("resOpt")[resId - 1].value);
+        var timeId = document.getElementById("timeChoice").selectedIndex;
+        console.log("Date Selected: " + document.getElementById("dateOpt").value);
+        console.log("Time Selected: " + document.getElementsByClassName("timeOpt")[timeId - 1].value);
+        alert("Thank you for reserving a table with us!")
+    }
+</script>
+
+</html>
