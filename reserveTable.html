@@ -6,10 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reserve a Table | The Noodle Nirvana</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./reserveTableMobile.css">
+    <link rel="stylesheet" href="./reserveTable.css">
 </head>
 
 <body>
+    <div class="topnav">
+        <a href="./index.html" class="active" style="font-size: 1.5em;">The Noodle Nirvana</a>
+        <div id="myLinks">
+            <a href="./index.html">Home</a>
+            <a href="#contact">Our Services</a>
+            <a href="#about">About Us</a>
+            <a href="#about">Contact Us</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i id="hamburger" class="fa fa-bars"></i>
+        </a>
+    </div>
     <div id="upperText">
         <p id="boldUpperText">
             Let us serve you a classy experience
@@ -78,6 +90,14 @@
         console.log("Date Selected: " + document.getElementById("dateOpt").value);
         console.log("Time Selected: " + document.getElementsByClassName("timeOpt")[timeId - 1].value);
         alert("Thank you for reserving a table with us!")
+    }
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
     }
 </script>
 

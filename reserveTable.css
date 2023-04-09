@@ -4,11 +4,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
 
 body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: #555;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #222;
+    position: relative;
+}
+
+.topnav #myLinks {
+    display: none;
+}
+
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    
+    font-family: 'Solway', serif;    
+}
+
+.topnav a.icon {
+    background: black;
+    color: white;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.active {
+    background-color: #000000;
+    color: white;
+    font-family: 'Raleway', serif;
+    
+}
+
+body {
     background-color: black;
     color: white;
 }
 
-div#upperText{
+div#upperText {
     margin-top: 3vh;
 }
 
@@ -35,7 +85,8 @@ img#photoReservation {
     height: auto;
 }
 
-input, select {
+input,
+select {
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -47,7 +98,7 @@ input, select {
     font-family: 'Solway', serif;
 }
 
-option{
+option {
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -59,14 +110,14 @@ option{
     font-family: 'Solway', serif;
 }
 
-div#finalButton{
+div#finalButton {
     margin-top: 4vh;
     width: 90vw;
     justify-content: center;
     text-align: center;
 }
 
-button{
+button {
     margin: auto;
     height: 15vh;
     width: 15vh;
@@ -74,15 +125,20 @@ button{
     border-radius: 100%;
 }
 
-img#table{
+img#table {
     width: 6vh;
     height: 6vh;
 }
 
-div#spacing{
+div#spacing {
     height: 0.2vh;
 }
 
-p#buttonText{
+p#buttonText {
     margin-top: 0;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
 }
