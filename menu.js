@@ -3,7 +3,7 @@ if (screen.availWidth > screen.availHeight) {
     document.write("<link rel=\"stylesheet\" href=\"menuL.css\" >")
 } else {
     console.log("phone");
-    window.location.replace("http://stackoverflow.com");
+    document.getElementById("addBody").innerHTML = " H. No. 5-5-99/3, Sree Ram Nagar Colony, Kukatpally, <br> Hyderabad - 500072"
 }
 
 function myFunction() {
