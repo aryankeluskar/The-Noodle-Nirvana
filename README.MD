@@ -10,8 +10,6 @@ The idea behind the project is to provide a comprehensive web solution to The No
 
 <h3 style="display: inline"> Dine-In Menu: </h3> A digital menu that allows customers to view the restaurant's dishes and their prices. Customers can filter dishes by categories, such as appetizers, entrees, desserts, and drinks. They can also sort dishes by their price or name.
 
-<h3 style="display: inline">Festival Page: </h3> A festival page that showcases The Noodle Nirvana's special dishes and promotions during a specific festival.
-
 <h3 style="display: inline">Checkout Online Delivery: </h3> A checkout page that allows customers to purchase food items online and get them delivered to their doorstep. Customers can select the items they want to order, specify their delivery address, and make a payment.
 
 <h3 style="display: inline">Make a Reservation Page: </h3> A reservation page that enables customers to reserve a table for dine-in. Customers can choose the date and time they want to visit the restaurant, specify the number of people in their party, and leave any special requests or comments.
