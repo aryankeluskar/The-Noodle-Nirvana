@@ -3,6 +3,8 @@ The Noodle Nirvana
 </h1>
 Welcome to The Noodle Nirvana, a restaurant that offers an online menu, table reservation, and an e-commerce store for its food. This project is developed using HTML5, CSS3, and Vanilla JS. It is designed to be responsive and a PWA.
 
+<image src="https://github.com/aryankeluskar/The-Noodle-Nirvana/blob/master/image.png?raw=true">
+
 <h2>
 Project Overview
 </h2>
